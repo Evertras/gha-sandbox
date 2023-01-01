@@ -13,4 +13,4 @@ jobs:
       - name: Print out the full ref
         run: echo ${GITHUB_REF}
       - name: Print out the tag alone
-        run: echo ${GITHUB_REF#/*}
+        run: echo ${GITHUB_REF#*/}
