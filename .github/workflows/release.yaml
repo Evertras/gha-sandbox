@@ -1,0 +1,14 @@
+name: Basic
+
+on:
+  release
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print the SHA
+        run: echo ${GITHUB_SHA}
+      - name: Print out the tag
+        run: echo ${GITHUB_REF}
